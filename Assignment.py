@@ -110,9 +110,9 @@ def update_output_container(selected_statistics, input_year):
         )
 
 # Plot 4 bar chart for the effect of unemployment rate on vehicle type and sales
-        unemployment = data.groupby('Unemployment_Rate')['Automobile_Sales'].mean().reset_index()
+        unemployment = data.groupby('unemployment_Rate')['Automobile_Sales'].mean().reset_index()
         R_chart4  = dcc.Graph(
-            figure=px.bar(unemployment,x="Unempleyment_Rate",y="Automobile_Sales",color="Vehicle_Type"),
+            figure=px.bar(unemployment,x="unempleyment_Rate",y="Automobile_Sales",color="Vehicle_Type"),
             title="Effect of unemployment rate on Vehicle type and sells")
 
         return [
