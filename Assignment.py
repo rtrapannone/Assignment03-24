@@ -165,12 +165,18 @@ def update_output_container(selected_statistics, input_year):
             html.Div(className='chart-item', children=[Y_chart3, Y_chart4])
         ]
 
-      return None
+        return None
 
 # Run the Dash app
 if __name__ == '__main__':
     app.run_server(debug=True)
 
+
+
+
+
+
+ 
 
 
 
